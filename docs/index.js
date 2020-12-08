@@ -7,7 +7,10 @@ if (navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Tr
 } else {
     $(document).ready(function () {
         prepararControles();
-    })
+        $(window).resize(function () {
+            resize();
+        });
+    });
 }
 
 async function prepararControles() {
@@ -25,8 +28,8 @@ async function prepararControles() {
     //$("#msg").html(JSON.stringify(result)); 
 
     console.timeEnd("obtenerArticulos");
-    
-    
+
+
     $("#msg").html("");
     for (const articulo of result) {
         $("#dvCards").append(
@@ -48,7 +51,7 @@ async function prepararControles() {
                 newTab.document.body.innerHTML = `<img src="data:${foto["$content-type"]};base64,${foto["$content"]}">`;
             });
             $("#cbody" + articulo.codigo).html(imgarticulo);
-            $(".img-articulos").css("width", $(window).width() * 0.15);
+            resize();
         }
 
 
@@ -58,3 +61,6 @@ async function prepararControles() {
 
 }
 
+function resize() {
+    $(".img-articulos").css("width", $(window).width() * 0.50);
+}
