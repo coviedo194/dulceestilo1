@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Estilo Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.min.js"
+        integrity="sha512-3z5bMAV+N1OaSH+65z+E0YCCEzU8fycphTBaOWkvunH9EtfahAlcJqAVN2evyg0m7ipaACKoVk6S9H2mEewJWA=="
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body class="bg-light text-dark">
+    <div class="container mt-5 card">
+        <div class="card-body">
+            <div class="row mb-5">
+                <div class="col-sm-2">
+                    <img src="logob.jpg" class="rounded" alt="Cinque Terre">
+                </div>
+                <div class="col-sm-10 d-flex align-items-center justify-content-center">
+                    <h2>Dulce Estilo Productos</h2>
+                </div>
+            </div>
+            <div class="table-responsive">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                            <th>Enviar un whatsapp</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyArticulos">
+                    </tbody>
+                </table>
+            </div>
+            <div id="msg">
+                <h2>cargando...</h2>
+                <p>Debido a que te mostraremos las imágenes en alta definición, favor esperar 30 segundos
+                    aproximadamente para visualizar los articulos...<br>
+                    Disculpe la demora, estamos trabajamos para mejorar su experiencia.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+
+</html>
